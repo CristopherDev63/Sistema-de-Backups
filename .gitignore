@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+venv/
+*.egg
+
+# PyInstaller build artifacts
+build/
+dist/
+
+# Logs
+backup.log
+
+# Test artifacts (generated at runtime)
+tests/carpeta_origen/
+tests/carpeta_destino/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/

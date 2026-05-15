@@ -1,0 +1,33 @@
+{
+    "respaldo": {
+        "nombre": "backup",
+        "descripcion": "Backup automático del proyecto"
+    },
+    "rutas": {
+        "origen": "./tests/",
+        "destino": "./tests/carpeta_destino"
+    },
+    "filtros": {
+        "ignorar_extensiones": [".tmp", ".log", ".cache"],
+        "ignorar_carpetas": ["node_modules", ".git", "__pycache__"],
+        "ignorar_archivos": [".DS_Store", "thumbs.db"]
+    },
+    "compresion": {
+        "tipo": "zip",
+        "incluir_fecha": true,
+        "formato_fecha": "%Y-%m-%d_%H:%M"
+    },
+    "retencion": {
+        "max_backups": 5,
+        "dias_maximos": 30
+    },
+    "logging": {
+        "nivel": "DEBUG",
+        "archivo": "backup.log"
+    },
+    "modo_prueba": {
+        "activado": true,
+        "ruta_origen": "./tests/carpeta_origen",
+        "ruta_destino": "./tests/carpeta_destino"
+    }
+}
